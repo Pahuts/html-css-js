@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container {
+  background: darkgreen;
+  border: 3px solid #272727;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 1px;
+}
+.column img {
+  padding: 4px;
+  width: 50%;
+  border-radius: 100%;
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+  }
+ }
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+ }
+.flexbox-container {
+  height: 95vh;
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 95vh; */
+  /* Align Items 
+      Align each item to each other
+  */
+  /* Align Content
+      Aligns the entire group within the container
+  */
+  /* The default of align-items is Stretch 
+      This is for aligning items in the Cross Axis
+  */
+  /* Justify content is always referring to the main axis
+      It could be vertical or horizontal depending on the  direction of the flexbox 
+      This is for aligning items in the Main Axis
+  */
+  /* We have 2 axis
+      The main axis always follow the direction of the flexbox
+      Flexbox is a row by default (horizontal)
+  */
+}
+.flexbox-item {
+  background: #ff652f;
+  border: 3px solid #272727;
+  color: #fff;
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-1{
+  min-height: 50px;
+  flex: 1 1 15%;
+  order: 2;
+  /* First Value = flex-grow
+     Second Value = flex-shrink
+     Third Value = flex-basis
+   */
+}
+.item-2{
+  min-height: 100px;
+  flex: 1 1 25%;
+  order: 1;
+}
+.item-3{
+  min-height: 250px;
+  flex: 5 5 25%;
+  order: 3;
+}

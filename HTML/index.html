@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Web Tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,Javascriot">
+  <meta name ="author" content="Ronaldo Luis">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <title>Chonks</title>
+</head>
+<body>
+  <!-- Keyboard Shortcuts 
+      1. CNTR + D = Highlights the elements with the same name - press multiple times to highlight multiple elements
+      2. ALT + SHIFT + DOWN ARROW = Copies the line where your cursor is downwards
+  -->
+  <!-- Headings -->
+  <h1>Hello World</h1>
+  <h2>Hello World</h2>
+  <h3>Hello World</h3>
+  <h4>Hello World</h4>
+  <h5>Hello World</h5>
+  <h6>Hello World</h6>
+
+  <hr>
+  <!-- Inline vs Block Level Elements-->
+  <!-- Inline - Do not start a new line, only take needed width -->
+  <!-- Ex: <span>, <img>, <a> -->
+  <!-- Block Level Elements: Starts a new line, takes full width available-->
+  <!-- Ex: <div>, <h1>-<h6>, <p> -->
+  <!-- <b> and <i> tags are not semantic and should not be used anymore. Use <strong> and <em> as a replacement -->
+  <!-- Attributes: Key-Value pairs - Use double quotation marks -- Ex: p title="hello" -->
+  <div>
+    <!-- Paragraphs -->
+    <p title="This is a tooltip"><strong>Lorem ipsum,</strong> dolor sit amet <em>consectetur adipisicing elit.</em> Delectus similique accusamus suscipit ullam dolore <span>voluptatem quod nemo natus earum ad!</span> Modi ducimus, accusantium officiis dolor aut qui deserunt cumque nisi! <br>
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur <mark>adipisicing</mark> elit. <small>Delectus</small> <del>similique</del> <ins>accusamus</ins> <sub>suscipit</sub> <sup>ullam</sup> dolore voluptatem quod nemo natus earum ad! Modi ducimus, accusantium officiis dolor aut qui deserunt cumque nisi! <br>
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus similique accusamus suscipit ullam dolore voluptatem quod nemo natus earum ad! Modi ducimus, accusantium officiis dolor aut qui deserunt cumque nisi! <br>
+      This is another sentence.
+    </p>
+  </div>
+  <hr>
+  <!-- Start with a size that is close to what you want -->
+  <!-- Image -->
+  <a href="#bookmark" target="_blank">
+    <img src="/images/petbg.jpg" alt="This is an image of a monkey" width="400">
+  </a>
+  <br>
+  <!-- List Examples -->
+  <ol type="1" start="25">
+    <li>List Item 1</li>
+      <ul>
+        <li>Sub Bullet 1</li>
+        <li>Sub Bullet 2</li>
+      </ul>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <li>List Item 5</li>
+  </ol>
+  <hr>
+  <!-- The purpose of a table element is to display Tabular data -->
+  <!-- Table Examples-->
+  <table>
+    <caption>This is a caption.</caption>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jill</td>
+        <td>123-123-123</td>
+        <td>456-456-456</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>Jill Smith</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone</th>
+      <td>123-123-123</td>
+    </tr>
+    <tr>
+      <td>123-123-123</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <hr>
+  <!-- Form Example -->
+  <form action="server.php">
+    <fieldset>
+      <legend>Personal Information:</legend>
+      First Name:<br>
+      <input type="text" name="firstname" value="" placeholder="First Name Here"><br>
+      Last Name:<br>
+      <input type="text" name="lastname" value=""><br>
+      <input id="option1" type="radio" name="options">
+      <label for="option1">Option 1:</label>
+      <input type="radio" name="options">Option 2 <br>
+      <input type="checkbox" name="checkboxes"> Checkbox 1
+      <input type="checkbox" name="checkboxes" checked> Checkbox 2
+      <input type="checkbox" name="checkboxes"> Checkbox 3<br><br>
+      
+      <label for="carSelect">Select:</label>
+      <select id="carSelect" name="cars" multiple>
+        <option value="BMW" selected>BMW</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Toyota">Toyota</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  <hr>
+  <!-- Button -->
+  <button>Click Me</button>
+  <p id="bookmark">This is a paragraph with ID</p>
+  <!-- General Guidelines 
+        1. Use lowercase element names - <div>
+        2. Use lowercase attribute names
+        3. Use lowercase file names
+        4. Use camel case for names, classes,ID's, etc
+        5. No spaces before or after = in attributes - title="My Title"
+        6. Avoid long lines of code, break up code
+        7. Do not add blank lines without a reason
+        8. Indent code 2 spaces - each line
+        9. Close tags in proper order
+  -->
+
+
+</body>
+</html>
